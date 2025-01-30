@@ -6,9 +6,15 @@
 - Used `useradd` for Lupu with similar properties. - Command used: `sudo useradd -m -d /home/lupu -s /bin/bash -G lupu lupu`
 - Created Hupu as a system user. - Command used: `sudo useradd --system --shell /bin/false hupu`
 
+*Creating Users*
 <p align="center">
-  <img src="expense.png" alt="Final Output" width="300"/>
+  <img src="1.png" alt="Creating Users" width="300"/>
 </p>
+
+<p align="center">
+  <img src="2.png" alt="Creating Users" width="300"/>
+</p>
+
 
 ## 2. Granting Sudo Access
 - Edited `visudo` to add Tupu and Lupu.
@@ -33,14 +39,16 @@
 - The setgid bit was set to ensure new files inherit the projekti group ownership.
 - Permissions were set to 2770 to restrict access to only tupu and lupu.
 
+*Projekti*
 <p align="center">
-  <img src="expense.png" alt="Final Output" width="300"/>
+  <img src="3.png" alt="Projekti" width="300"/>
 </p>
 
 ## 4. Testing
 - Confirmed access using `su - user`.
 - Ensured files inherit `projekti` ownership.
 
+*Testing*
 <p align="center">
-  <img src="expense.png" alt="Final Output" width="300"/>
+  <img src="4.png" alt="Testing" width="300"/>
 </p>
