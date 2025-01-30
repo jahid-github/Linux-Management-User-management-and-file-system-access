@@ -14,6 +14,7 @@
 - Created `projekti` group.
 - Assigned Tupu and Lupu as members.
 - Set `2770` permissions to restrict access.
+
 *Commands used:*
 - sudo mkdir -p /opt/projekti
 - sudo groupadd projekti
